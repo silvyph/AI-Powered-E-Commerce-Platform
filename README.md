@@ -1,272 +1,317 @@
-# 🧵 AI Fabric Stylist
+# 🛒 AI-Powered E-Commerce Platform
 
-✨ AI-powered fashion assistant for fabric recommendations, outfit styling, and fashion consultation using Gemini API and Large Language Models (LLM).
+A full-stack e-commerce web application built with Laravel 10, featuring secure authentication, payment gateway integration, RESTful APIs, admin dashboard, and an AI-powered customer support chatbot.
 
----
+## 🚀 Live Demo
 
-## 🌟 Overview
-
-AI Fabric Stylist is an interactive AI fashion chatbot designed to help users with:
-
-* 👕 Recommending the best fabric materials
-* 🧥 Providing outfit inspiration
-* 🧵 Explaining fabric characteristics
-* 💡 Giving fashion and fabric care tips
-* 🤖 Answering fashion-related questions naturally using AI
-
-This project uses:
-
-* **Google Gemini API (LLM)**
-* **Streamlit** as an interactive frontend
-* **Simple RAG** implementation using an internal fabric dataset
-* **Conversational Memory** to understand previous chat context
----
-
-# ✨ Main Features
-
-## 🤖 AI Fashion Chatbot
-
-Interactive LLM-based fashion chatbot capable of understanding natural language.
-
-## 🧵 Fabric Recommendation System
-
-Provides fabric recommendations based on user needs and fashion context.
-
-## 📚 Simple RAG (Retrieval-Augmented Generation)
-
-Uses an internal dataset (`fabric_dataset.csv`) to provide more relevant responses.
-
-## 🧠 Conversation Memory
-
-The chatbot can understand previous conversation context.
-
-## 🎨 Modern UI Design
-
-Built with a modern and clean custom Streamlit UI.
-
-## 🌐 Public Access
-
-Can be accessed publicly using ngrok deployment.
+* Portfolio: https://silvy-portfolio.vercel.app
+* Repository: https://github.com/silvyph/ecommerce-api
+* Deployment: Alwaysdata Hosting
 
 ---
 
-# 🛠️ Tech Stack
+## 📌 Project Overview
 
-| Technology        | Description                   |
-| ----------------- | ----------------------------- |
-| Python            | Main programming language     |
-| Streamlit         | Interactive web app framework |
-| Google Gemini API | Large Language Model          |
-| Pandas            | Dataset processing            |
-| Ngrok             | Public deployment tunnel      |
+This project was developed to simulate a modern e-commerce ecosystem with complete customer and admin workflows.
+
+The application includes:
+
+* Product catalog and shopping cart
+* Secure authentication with Google OAuth
+* Payment processing using Xendit
+* Admin dashboard for business management
+* RESTful APIs for future mobile integration
+* AI-powered chatbot using Gemini API
+* Real-time payment status updates via webhook
 
 ---
 
-# 📂 Project Structure
+## ✨ Key Features
+
+### Customer Features
+
+* Browse products by category
+* Product detail pages
+* Shopping cart management
+* User registration and login
+* Google OAuth authentication
+* Secure checkout process
+* Order history tracking
+* AI chatbot customer support
+
+### Admin Features
+
+* Product Management (CRUD)
+* Order Management
+* User Management
+* Category Management
+* Sales Monitoring Dashboard
+* Business Reporting
+
+### API Features
+
+* RESTful API Architecture
+* Laravel Sanctum Authentication
+* Product APIs
+* Payment APIs
+* Chatbot APIs
+
+### Security Features
+
+* Role-Based Access Control (RBAC)
+* Laravel Sanctum Token Authentication
+* Google OAuth Authentication
+* Xendit Webhook Validation
+* Protected Admin Routes
+
+---
+
+## 💡 Technical Highlights
+
+### Xendit Payment Integration
+
+Integrated Xendit payment gateway to generate invoices and process customer payments.
+
+### Webhook-Based Payment Synchronization
+
+Automatically updates order status after receiving payment notifications from Xendit.
+
+### AI Customer Support Chatbot
+
+Implemented customer support chatbot using Gemini API to answer product-related questions and improve user experience.
+
+### RESTful API Development
+
+Developed API endpoints to support future mobile application integration.
+
+### Dual Database Architecture
+
+Separated authentication and e-commerce data using multiple database connections.
+
+### Deployment Experience
+
+Successfully deployed and configured the application on Alwaysdata Hosting.
+
+---
+
+## 🖼️ Application Screenshots
+
+### Home Page
+
+*Add screenshot here*
+
+### Product Catalog
+
+*Add screenshot here*
+
+### Shopping Cart & Checkout
+
+*Add screenshot here*
+
+### Admin Dashboard
+
+*Add screenshot here*
+
+### AI Chatbot
+
+*Add screenshot here*
+
+---
+
+## 🔄 System Workflow
+
+### Customer Flow
+
+1. Browse products
+2. Add items to cart
+3. Authenticate using Email or Google OAuth
+4. Checkout
+5. Generate invoice via Xendit
+6. Complete payment
+7. Receive webhook confirmation
+8. Order status automatically updated
+
+### Admin Flow
+
+1. Login as Administrator
+2. Manage products
+3. Manage categories
+4. Monitor orders
+5. Manage users
+6. View reports and analytics
+
+---
+
+## 🏗️ System Architecture
+
+```text
+Customer
+   │
+   ▼
+Laravel Application
+   │
+   ├── MySQL Database
+   │
+   ├── Google OAuth
+   │
+   ├── Xendit Payment Gateway
+   │
+   └── Gemini AI Chatbot
+```
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+
+* Laravel 10
+* PHP 8.1+
+* Laravel Sanctum
+* Laravel Socialite
+
+### Frontend
+
+* Blade
+* HTML
+* CSS
+* JavaScript
+* Vite
+
+### Database
+
+* MySQL
+
+### Third-Party Services
+
+* Xendit Payment Gateway
+* Google OAuth
+* Gemini API
+
+### Tools
+
+* Git & GitHub
+* Composer
+* NPM
+* Alwaysdata Hosting
+
+---
+
+## 📂 Project Structure
+
+```text
+app/
+├── Http/
+├── Models/
+├── Middleware/
+├── Controllers/
+
+database/
+├── migrations/
+├── seeders/
+
+resources/
+├── views/
+├── css/
+├── js/
+
+routes/
+├── web.php
+├── api.php
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
 
 ```bash
-ai-fabric-chatbot/
-│
-├── app.py
-├── fabric_dataset.csv
-├── test_gemini.py
-├── google.py
-└── README.md
+git clone https://github.com/silvyph/ecommerce-api.git
+cd ecommerce-api
 ```
 
----
-
-# 🚀 Installation
-
-## 1️⃣ Clone Repository
+### Install Dependencies
 
 ```bash
-git clone https://github.com/silvyph/ai-fabric-chatbot.git
-cd ai-fabric-chatbot
+composer install
+npm install
 ```
 
----
-
-## 2️⃣ Create Virtual Environment
+### Environment Setup
 
 ```bash
-python -m venv venv
+cp .env.example .env
+php artisan key:generate
 ```
 
-Activate environment:
+Configure:
 
-### Windows
+* Database credentials
+* Xendit API Key
+* Google OAuth credentials
+* Gemini API Key
+
+### Run Migration
 
 ```bash
-venv\Scripts\activate
+php artisan migrate
 ```
 
----
-
-## 3️⃣ Install Dependencies
+### Build Assets
 
 ```bash
-pip install streamlit
-pip install google-generativeai
-pip install pandas
+npm run build
 ```
 
----
-
-## 4️⃣ Configure Gemini API
-
-Open file `app.py`
-
-Replace:
-
-```python
-genai.configure(api_key="YOUR_API_KEY")
-```
-
-With your own Gemini API Key.
-
-📌 Get API Key:
-
-[https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
-
----
-
-# ▶️ Run Application
+### Start Application
 
 ```bash
-streamlit run app.py
-```
-
-Open browser:
-
-```bash
-http://localhost:8501
+php artisan serve
 ```
 
 ---
 
-# 🌍 Public Deployment with Ngrok
+## 🔐 Security Considerations
 
-```bash
-ngrok http 8501
-```
-
-Ngrok will generate a public URL such as:
-
-```bash
-https://xxxx.ngrok-free.app
-```
+* Environment variables stored securely in `.env`
+* CSRF protection enabled
+* Authentication via Sanctum
+* Webhook validation implemented
+* Role-based authorization applied
+* Input validation and request sanitization
 
 ---
 
-# 💬 Example Questions
+## 📈 Future Improvements
 
-* "Bahan adem untuk kemeja kantor"
-* "Kain terbaik untuk hoodie"
-* "Tips perawatan chiffon"
-* "Outfit linen cocok dipadukan dengan apa?"
-* "Bahan premium untuk dress"
-
----
-
-# 🧠 AI Concepts Used
-
-This project implements:
-
-* Large Language Model (LLM)
-* Natural Language Processing (NLP)
-* Retrieval-Augmented Generation (RAG)
-* Conversational AI
-* Prompt Engineering
+* Product recommendation system
+* Payment analytics dashboard
+* Docker deployment
+* CI/CD pipeline
+* Email notification service
+* Mobile application integration
 
 ---
 
-# 📸 User Interface Preview
+## 👩‍💻 Author
 
-## 🏠 Main Interface
+**Silvy Putri Hanafi**
 
-* Modern fashion-themed UI
-* Interactive chatbot bubbles
-* Fashion category cards
-* Sidebar customization
+Backend Developer | Laravel Developer | AI Integration Enthusiast
 
-## ✨ Features Preview
+Portfolio:
+https://silvy-portfolio.vercel.app
 
-* AI outfit recommendation
-* Fabric explanation
-* Fashion consultation
-* Conversational context memory
-
-## 📸 Application Preview
-
-### Home UI
-![Home UI](Home%20UI.png)
-
-### Chat Example
-![Chat Example](Chat%20Example.png)
-
-### Context Memory
-![Context Memory](Context%20Memory.png)
-
-### Dataset / RAG Example
-![RAG Example](Dataset%20or%20RAG%20Example.png)
----
-
-# 🎯 Final Project Objective
-
-This project was developed as a Final Project for:
-
-> LLM-Based Tools and Gemini API Integration for Data Scientists
-
-organized by **Hacktiv8** as part of the AI learning and training program.
-
-The project focuses on building an interactive AI chatbot using:
-
-* Large Language Models (LLM)
-* Natural Language Processing (NLP)
-* Gemini API Integration
-* Retrieval-Augmented Generation (RAG)
-
-with a real-world use case in fashion and fabric recommendation systems.
+LinkedIn:
+https://linkedin.com/in/silvyputrihanafi
 
 ---
 
-# 👩‍💻 Author
+## 🙏 Acknowledgements
 
-**Silvy Putri**
-
-AI Fabric Stylist Project ✨
-
----
-
-# ⭐ Notes
-
-* Use your own Gemini API Key.
-* Gemini API free tier has usage quota limitations.
-* Make sure your internet connection is active while running the chatbot.
-
----
-
-# ❤️ Thank You
-
-Thank you for visiting this project.
-
-If you find this project interesting, feel free to give this repository a ⭐ on GitHub.
-
----
-
-# 📌 Training Program
-
-This project was created during the:
-
-**LLM-Based Tools and Gemini API Integration for Data Scientists**
-
-conducted by **Hacktiv8** under the AI Opportunity Fund program.
-
-The training focused on:
-
-* AI application development
-* Gemini API integration
-* NLP and LLM implementation
-* Conversational AI systems
-* AI-powered recommendation systems
+* Laravel
+* Xendit
+* Google OAuth
+* Gemini AI
+* Alwaysdata Hosting
