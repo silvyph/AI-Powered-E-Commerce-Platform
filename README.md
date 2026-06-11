@@ -316,10 +316,20 @@ https://linkedin.com/in/silvyputrihanafi
 * Gemini AI
 * Alwaysdata Hosting
 
-## 📌 Note
+## 📌 Repository Notice
 
-This repository contains a simplified portfolio version of the project.
+This repository is a portfolio showcase version of the project.
 
-For security and privacy reasons, the complete production source code is not publicly available. The public version primarily showcases the AI chatbot integration, Laravel architecture, and selected application features.
+Due to privacy, security, and intellectual property considerations, the complete production source code is not publicly available.
 
-The full implementation can be demonstrated and discussed during technical interviews.
+The public repository focuses on demonstrating:
+
+- AI Chatbot integration using Gemini API
+- REST API implementation
+- Laravel application structure
+- Authentication flow
+- System architecture and development approach
+
+Several production modules, including business logic, payment processing configurations, deployment settings, and sensitive integrations have been excluded from this public version.
+
+Additional project details, architecture explanations, and live demonstrations can be discussed during technical interviews.
