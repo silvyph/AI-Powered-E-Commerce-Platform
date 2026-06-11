@@ -98,23 +98,23 @@ Successfully deployed and configured the application on Alwaysdata Hosting.
 
 ### Home Page
 
-![Homepage](screenshots/homepage.png)
+![Homepage](homepage.png)
 
 ### Product Catalog
 
-![Product Catalog](screenshots/produk_katalog.png)
+![Product Catalog](produk_katalog.png)
 
 ### Shopping Cart & Checkout
 
-![Shopping Cart](screenshots/shoppingcart.png)
+![Shopping Cart](shoppingcart.png)
 
 ### Admin Dashboard
 
-![Admin Dashboard](screenshots/admin_dashboard.png)
+![Admin Dashboard](admin_dashboard.png)
 
 ### AI Chatbot
 
-![AI Chatbot](screenshots/chatbot.png)
+![AI Chatbot](chatbot.png)
 
 ---
 
