@@ -315,3 +315,11 @@ https://linkedin.com/in/silvyputrihanafi
 * Google OAuth
 * Gemini AI
 * Alwaysdata Hosting
+
+## 📌 Note
+
+This repository contains a simplified portfolio version of the project.
+
+For security and privacy reasons, the complete production source code is not publicly available. The public version primarily showcases the AI chatbot integration, Laravel architecture, and selected application features.
+
+The full implementation can be demonstrated and discussed during technical interviews.
